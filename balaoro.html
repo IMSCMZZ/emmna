@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+</head>
+<body>
+<style>
+header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: ;
+    color: black;
+}
+
+body{
+background-color: blanchedalmond;
+    width: 94%;
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+}
+.gallery{
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+  }
+  
+  .gallery__item{
+    box-sizing:border-box;
+    width:100%;
+    padding:1rem;
+    margin:1rem;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+  }
+  .gallery__image{
+    width:100%;
+    display:block;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  .gallery__image-caption{
+    margin-top:1rem;
+    color: grey; 
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  }
+  .gallery-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .gallery-button button {
+    background-color: grey;
+    color: white; 
+    padding:1 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 33.75em){
+    .gallery__item{
+      flex-basis: calc(50% - 2rem);
+    }
+  }
+  @media only screen and (min-width: 48em){
+    .gallery__item{
+      flex-basis: calc((100% / 3) - 2rem);
+    }
+  }
+  @media only screen and (min-width: 60em){
+    .gallery__item{
+      flex-basis: calc((100% / 4) - 2rem);
+    }
+  }
+  @media only screen and (min-width: 72em){
+    .gallery__item{
+        flex-basis: calc((100% / 5) - 2rem);
+    }
+  }
+
+
+
+
+</style>
+
+
+<header>
+  <h1>
+      CSS FLEXBOX GALLERY
+  </h1>
+</header>
+<div class="gallery">
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images2.alphacoders.com/858/thumbbig-858263.webp">  
+    <div class="gallery__image-caption">Anime</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images3.alphacoders.com/127/thumbbig-1278823.webp">  
+    <div class="gallery__image-caption">Animals</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images8.alphacoders.com/812/thumbbig-812645.webp">  
+    <div class="gallery__image-caption">Cars</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://opreviews.anime-pictures.net/ee3/ee37eca3eae440c2bc476399ae09e142_bp.png.avif">  
+    <div class="gallery__image-caption">Anime</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://w.wallha.com/ws/12/tw5pA8UX.png">  
+    <div class="gallery__image-caption">Anime</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images.alphacoders.com/896/thumbbig-896501.webp">  
+    <div class="gallery__image-caption">Anime</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images2.alphacoders.com/534/thumbbig-534451.webp">  
+    <div class="gallery__image-caption">Anime</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images5.alphacoders.com/104/thumbbig-1040035.webp">  
+    <div class="gallery__image-caption">Demon Slayer</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images3.alphacoders.com/135/thumb-440-135625.webp">  
+    <div class="gallery__image-caption">Naruto</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images7.alphacoders.com/736/thumb-440-736462.webp">  
+    <div class="gallery__image-caption">Anime</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://c4.wallpaperflare.com/wallpaper/215/146/548/bleach-anime-mask-bankai-wallpaper-preview.jpg">  
+    <div class="gallery__image-caption">Hollow Mask</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://c4.wallpaperflare.com/wallpaper/1017/1024/835/anime-bleach-kurosaki-ichigo-redhead-wallpaper-preview.jpg">  
+    <div class="gallery__image-caption">Bankai</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://c4.wallpaperflare.com/wallpaper/738/465/247/bleach-kurosaki-ichigo-hollow-mask-wallpaper-preview.jpg">  
+    <div class="gallery__image-caption">Hollow Mask Bankai</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://c4.wallpaperflare.com/wallpaper/328/107/831/bleach-espada-grimmjow-jaegerjaquez-wallpaper-preview.jpg">  
+    <div class="gallery__image-caption">Grimmjow</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images5.alphacoders.com/128/thumb-440-1288655.webp">  
+    <div class="gallery__image-caption">Solo Levelling</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images4.alphacoders.com/134/thumb-440-1347368.webp">  
+    <div class="gallery__image-caption">Solo Levelling</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images3.alphacoders.com/134/thumbbig-1342793.webp">  
+    <div class="gallery__image-caption">Africa</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images7.alphacoders.com/870/thumbbig-870601.webp">  
+    <div class="gallery__image-caption">Scenery</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images5.alphacoders.com/872/thumbbig-872714.webp">  
+    <div class="gallery__image-caption">Shark</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+  <div class="gallery__item">
+      <img class="gallery__image" src="https://images3.alphacoders.com/128/thumbbig-1281541.webp">  
+    <div class="gallery__image-caption">Bridge</div>
+    <div class="gallery-button"><button>Click me</button></div>
+  </div>
+</div>
+</body>
+</html>
